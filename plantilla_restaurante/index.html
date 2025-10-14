@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante | Épica Digital UY</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <h1>LA-CAFETERA</h1>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a><i class="fa-solid fa-xmark" style="font-size: 28px;"></i></a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#reserva">Hacer una reserva</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <ul>
+                <li class="hideOnMobile"><a href="#inicio">Inicio</a></li>
+                <li class="hideOnMobile"><a href="#menu">Menú</a></li>
+                <li class="hideOnMobile"><a href="#reserva">Hacer una reserva</a></li>
+                <li class="hideOnMobile"><a href="#contacto">Contacto</a></li>
+                <li class="menu-button" onclick=showSidebar()><a><i class="fa-solid fa-bars"
+                            style="font-size: 28px;"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+
+    <div class="banner">
+    </div>
+
+    <!-- Inicio -->
+
+    <section id="inicio" class="inicio">
+        <div class="inicio-text">
+            <h2>Bienvenidos a <span class="title">La-Cafetera</span></h2>
+            <p>En La-Cafetera, nos enorgullece ofrecer una experiencia culinaria excepcional en un ambiente acogedor y
+                elegante. Nuestro restaurante se especializa en cocina contemporánea, combinando ingredientes frescos y
+                de
+                alta calidad para crear platos innovadores que deleitan el paladar.</p>
+            <p>Nuestro equipo de chefs talentosos y apasionados trabaja arduamente para diseñar un menú que refleje las
+                últimas tendencias gastronómicas, al mismo tiempo que rinde homenaje a los sabores clásicos. Ya sea que
+                estés buscando una cena romántica, una reunión familiar o una celebración especial, La-Cafetera es el
+                lugar
+                perfecto para disfrutar de una comida inolvidable.</p>
+        </div>
+        <div class="inicio-image">
+            <img src="img/inicio.png" alt="Imagen de bienvenida al restaurante">
+        </div>
+    </section>
+
+    <!-- Menú -->
+
+    <section id="menu" class="menu">
+        <h2>Nuestro Menú</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="https://lolialliati.com/wp-content/uploads/2024/08/Ensalada-cesar-1.jpg" alt="Plato 1">
+                <h3>Ensalada César</h3>
+                <p>Lechuga fresca, crutones, queso parmesano y aderezo César casero.</p>
+                <span class="price">$300</span>
+            </div>
+            <div class="menu-item">
+                <img src="https://www.vanillabeancuisine.com/wp-content/uploads/2024/12/Spaghetti-Alfredo-FEAT-IMAGE.jpg"
+                    alt="Plato 2">
+                <h3>Pasta Alfredo</h3>
+                <p>Pasta al dente con salsa cremosa de queso parmesano y pollo a la parrilla.</p>
+                <span class="price">$15.00</span>
+            </div>
+            <div class="menu-item">
+                <img src="https://thumbs.dreamstime.com/b/un-filete-la-parrilla-acompa%C3%B1ado-de-pur%C3%A9-patatas-y-trozo-naranja-370752766.jpg"
+                    alt="Plato 3">
+                <h3>Filete a la Parrilla</h3>
+                <p>Filete jugoso servido con puré de zapallo y vegetales al vapor.</p>
+                <span class="price">$25.00</span>
+            </div>
+            <div class="menu-item">
+                <img src="https://kevincocinero.com/wp-content/uploads/2023/06/cheesecake-frutos-rojos.jpg"
+                    alt="Plato 4">
+                <h3>Tarta de Queso</h3>
+                <p>Tarta de queso clásica con una base de galleta y salsa de frutas rojas.</p>
+                <span class="price">$8.00</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reserva -->
+
+
+    <section class="reserva" id="reserva">
+        <h2>Hacer una Reserva</h2>
+        <form action="https://edbackendcafeteriatemplate.vercel.app/api/reservas" method="post">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Teléfono:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="date">Fecha:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Hora:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="guests">Número de Invitados:</label>
+            <input type="number" id="guests" name="guests" min="1" max="20" required>
+
+            <button type="submit">Reservar Ahora</button>
+        </form>
+    </section>
+
+    <!-- Contacto -->
+
+    <section id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <div class="contacto-content">
+            <div class="contacto-info">
+                <h3>Visítanos</h3>
+                <p><i class="fa-solid fa-location-dot"></i> Av. Italia 2543, Montevideo, Uruguay</p>
+                <p><i class="fa-solid fa-phone"></i> +598 2400 5566</p>
+                <p><i class="fa-solid fa-envelope"></i> contacto@la-cafetera.uy</p>
+
+                <div class="redes">
+                    <h3>Seguinos!</h3>
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <form class="contacto-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+        <p>&copy; 2025 La-Cafetera. Todos los derechos reservados.</p>
+        <p>Diseñado por <a href="https://epicadigitaluy.com" target="_blank">Épica Digital UY</a></p>
+    </footer>
+
+    <!-- Script -->
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = "flex";
+        }
+
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
