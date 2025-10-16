@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f2f2f2;
+    color: #000;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* HEADER */
+header {
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.627);
+    backdrop-filter: blur(6px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #ccc;
+    z-index: 10;
+}
+
+header img {
+    width: 150px;
+    height: 50px;
+    object-fit: cover;
+    margin-left: 10px;
+}
+
+nav a {
+    color: #000;
+    margin: 0 1rem;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -4px;
+    background-color: #000;
+    transition: width 0.3s;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+.banner {
+    background-image: url(img/banner.png);
+    background-size: cover;
+    background-position: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 100vw;
+    height: 90vh;
+    background-repeat: no-repeat;
+}
+
+/* SECCIONES */
+.section {
+    padding: 4rem 2rem;
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+.section h2 {
+    color: #000;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.section p {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* HORARIOS */
+.tabla-horarios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.horario-card {
+    background-color: #f2f2f2;
+    border: 1px solid #000;
+    border-radius: 12px;
+    width: 260px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.horario-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+    aspect-ratio: 1 / 1;
+}
+
+
+
+.horario-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px var(--green);
+}
+
+.horario-card h3 {
+    margin: 18px 18px 5px 18px;
+}
+
+.horario-card p {
+    margin: 20px;
+    font-size: 14px;
+}
+
+/* GALERÍA */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.galeria img {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid var(--pink);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px var(--green);
+}
+
+/* FORMULARIO */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: transparent;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #000;
+    align-items: center;
+}
+
+input,
+select,
+textarea {
+    padding: 0.8rem;
+    border-radius: 8px;
+    width: 70%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #000;
+    border: 1px solid #000;
+    transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border: 1px solid #000;
+    width: 80%;
+}
+
+button {
+    background-color: var(--green);
+    color: #000;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: var(--pink);
+}
+
+/* CONTACTO */
+.contact .info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .info .info-text {
+    text-align: left;
+    width: 300px;
+    margin-right: 80px;
+}
+
+.contact .info .info-text h2 {
+    border-bottom: solid 1px #333;
+}
+
+.contact .info .image img {
+    width: 350px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 2rem;
+    border-top: 1px solid var(--green);
+    font-size: 0.9rem;
+    color: #747474;
+    border-top: 1px solid #000;
+}
+
+footer a {
+    color: #747474;
+    text-decoration-color: #747474;
+}
+
+/* WHATSAPP */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: transparent;
+    color: #0ed200;
+    font-size: 1.6rem;
+    padding: 0.6rem 0.9rem;
+    border-radius: 50%;
+    text-decoration: none;
+    border: solid 1px #0ed200;
+    box-shadow: 0 0 15px var(--green);
+    transition: all 0.3s ease;
+    z-index: 20;
+}
+
+.whatsapp-btn:hover {
+    background-color: #0ed200;
+    color: #f2f2f2;
+    transform: scale(1.1);
+}
+
+.redes {
+    font-size: 24px;
+    display: flex;
+    gap: 30px;
+}
+
+.redes a {
+    color: #000;
+    border: solid 1px #000;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.redes a i{
+    margin-top: 12px;
+}
+
+.redes a:hover{
+    background-color: #000;
+    color: #f2f2f2;
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+
+    body{
+        overflow-x: hidden;
+    }
+    .banner{
+        height: 300px;
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    nav a {
+        margin: 0 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .horario-card {
+        width: 90%;
+    }
+
+    .contact .info {
+        flex-direction: column;
+    }
+}

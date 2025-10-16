@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    backdrop-filter: blur(4px);
+    position: fixed;
+    width: 100vw;
+    height: 70px;
+    top: 0;
+    box-shadow: 0 5px 50px rgba(0, 0, 0, 0.26);
+}
+
+.logo img {
+    width: 50px;
+}
+
+header ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-right: 20px;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #000;
+    transform-origin: all ease 0.2s;
+}
+
+header ul li a:hover {
+    color: #0091ff;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.menu-icon i {
+    color: #000;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.banner {
+    margin-top: 30px;
+    background-image: url(img/banner.png);
+    height: 90vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.productos {
+    width: 70%;
+    margin: 0 auto;
+    
+
+}
+
+
+
+
+
+
+
+
+@media (max-width:600px) {
+    header ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: #ffffff;
+        width: 100%;
+        gap: 0;
+        overflow: hidden;
+    }
+
+    header ul li {
+        padding: 20px;
+    }
+
+    header ul li a:hover {
+        color: #0091ff;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    #menuList {
+        transition: all 0.5s ease;
+    }
+
+    .banner {
+        height: 30vh;
+        background-position: 50%;
+        margin-top: 60px;
+    }
+}
