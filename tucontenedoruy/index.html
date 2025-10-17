@@ -9,11 +9,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="https://kit.fontawesome.com/1eaf7c2824.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1eaf7c2824.js" crossorigin="anonymous"></script>
     <link rel="icon" href="img/logo.png">
 </head>
 
 <body>
+    <div class="pantalla-de-carga">
+        <div class="loader"></div>
+    </div>
     <!-- Secciones: Inicio, catálogo, opiniones, pedidos, contacto-->
     <header>
         <div class="logo">
@@ -204,7 +207,9 @@
         <p>Contactanos en:</p>
         <a href="tel:+59891123456">+598 91 123 456</a>
         <br>
-        <a href="https://www.instagram.com/tucontenedoruy/"><i class="fa-brands fa-instagram"></i><p>@tucontenedoruy</p></a>
+        <a href="https://www.instagram.com/tucontenedoruy/"><i class="fa-brands fa-instagram"></i>
+            <p>@tucontenedoruy</p>
+        </a>
         <br>
         <p>&copy; 2024 Tucontenedoruy. Todos los derechos reservados.</p>
     </footer>
@@ -213,6 +218,17 @@
         let menuList = document.getElementById("menuList");
 
         menuList.style.maxHeight = "0px";
+
+        document.onreadystatechange = function () {
+            if (document.readyState !== "complete") {
+                document.querySelector(".pantalla-de-carga").style.display = "block";
+            } else {
+                document.querySelector(".pantalla-de-carga").style.display = "none";
+            }
+        };
+        
+
+
 
         function toggleMenu() {
             if (menuList.style.maxHeight == "0px") {
