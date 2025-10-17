@@ -32,9 +32,11 @@ body {
     z-index: 9999;
 }
 .loader {
+    position: relative;
     border: 16px solid #f3f3f3;
     border-top: 16px solid #0091ff;
     border-radius: 50%;
+
     width: 120px;
     height: 120px;
     animation: spin 1500ms ease infinite;
