@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://kit.fontawesome.com/1eaf7c2824.js" crossorigin="anonymous"></script>
     <link rel="icon" href="img/logo.png">
 </head>
 
@@ -31,11 +32,12 @@
     </header>
 
     <!-- Banner -->
-
-    <div class="banner"></div>
+    <section id="inicio">
+        <div class="banner"></div>
+    </section>
 
     <main>
-        <section id="inicio">
+        <!-- <section id="inicio">
             <div class="sobre-nosotros">
                 <div class="sn-texto">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eveniet assumenda velit ratione.
@@ -44,7 +46,7 @@
                 </div>
                 <div class="sn-imagen"></div>
             </div>
-        </section>
+        </section> -->
         <section id="catalogo">
             <h2>Nuestros productos</h2>
             <div class="productos">
@@ -61,7 +63,7 @@
                     <button class="contacto">
                         Mas Información
 
-                    </button>                    
+                    </button>
                 </div>
                 <div class="producto">
                     <div class="img-producto">
@@ -145,15 +147,15 @@
         </section>
 
         <!-- Opiniones -->
-         <section class="opiniones" id="opiniones">
+        <section class="opiniones" id="opiniones">
             <h2>Opiniones de nuestros clientes</h2>
             <div class="op-contenedor">
                 <div class="op"><i>"Lorem ipsum dolor sit amet, consectetur adipisicing elit."</i></div>
                 <div class="op"><i>"Lorem ipsum dolor sit amet, consectetur adipisicing elit."</i></div>
                 <div class="op"><i>"Lorem ipsum dolor sit amet, consectetur adipisicing elit."</i></div>
             </div>
-         </section>
-         <section id="pedidos">
+        </section>
+        <section id="pedidos">
             <h2>¡Dinos que te interesa!</h2>
             <div class="interes-formulario">
                 <div class="entradas">
@@ -177,27 +179,35 @@
                     <button>Haznoslo Saber</button>
                 </div>
             </div>
-         </section>
-         <section id="contacto">
-           <h2>Contactate con Nosotros</h2>
+        </section>
+        <section id="contacto">
+            <h2>Contactate con Nosotros</h2>
             <p>Si quieres mas información, no dudes en escribirnos.</p>
-        <form>
-            <label>Nombre completo</label>
-            <input type="text" placeholder="Nombre" required>
+            <form>
+                <label>Nombre completo</label>
+                <input type="text" placeholder="Nombre" required>
 
-            <label>Email</label>
-            <input type="email" placeholder="tu@email.com" required>
+                <label>Email</label>
+                <input type="email" placeholder="tu@email.com" required>
 
-            <label>Tu departamento</label>
-            <input type="text" placeholder="Montevideo" required>
+                <label>Tu departamento</label>
+                <input type="text" placeholder="Montevideo" required>
 
-            <label>Mensaje</label>
-            <textarea rows="4" placeholder="¿Qué necesitas?"></textarea>
+                <label>Mensaje</label>
+                <textarea rows="4" placeholder="¿Qué necesitas?"></textarea>
 
-            <button type="submit">Enviar Inscripción</button>
+                <button type="submit">Enviar Inscripción</button>
             </form>
-         </section>
+        </section>
     </main>
+    <footer>
+        <p>Contactanos en:</p>
+        <a href="tel:+59891123456">+598 91 123 456</a>
+        <br>
+        <a href="https://www.instagram.com/tucontenedoruy/"><i class="fa-brands fa-instagram"></i><p>@tucontenedoruy</p></a>
+        <br>
+        <p>&copy; 2024 Tucontenedoruy. Todos los derechos reservados.</p>
+    </footer>
 
     <script>
         let menuList = document.getElementById("menuList");
