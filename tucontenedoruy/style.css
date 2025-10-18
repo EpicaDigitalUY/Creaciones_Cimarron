@@ -322,6 +322,9 @@ footer {
 
 
 @media (max-width:600px) {
+    header {
+        width: 100%;
+    }
     header ul {
         position: absolute;
         top: 70px;
