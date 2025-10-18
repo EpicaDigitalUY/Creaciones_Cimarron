@@ -579,7 +579,9 @@ footer a:hover {
     .reserva form input,
     .reserva form select,
     .reserva form textarea {
+        width: 100%;
         font-size: 15px;
+        margin: 0 auto;
     }
 }
 
@@ -588,6 +590,15 @@ footer a:hover {
     header h1 {
         font-size: 22px;
         text-decoration-thickness: 0.5px;
+    }
+
+
+    .contacto {
+        margin: 10px;
+    }    
+    .info-text {
+        font-size: 14px;
+        padding: 0 10px;
     }
 
     .banner {
@@ -627,6 +638,14 @@ footer a:hover {
     .reserva form {
         padding: 15px;
         gap: 10px;
+    }
+
+.reserva form input,
+    .reserva form select,
+    .reserva form textarea {
+        width: 100%;
+        font-size: 15px;
+        margin: 0 auto;
     }
 
     .reserva form button {
