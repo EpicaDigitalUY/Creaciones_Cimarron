@@ -263,7 +263,34 @@ header nav .sidebar li {
 .reserva form button:hover {
     background-color: #7a4220;
 }
+.loaded-response {
+    display: none;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
 
+}
+.success {
+    display: none;
+    margin-top: 15px;
+    padding: 10px;
+    border: solid 1px #4BB543;
+    background-color: #DFF2BF;
+    color: #31762c;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.error {
+    display: none;
+    margin-top: 15px;
+    padding: 10px;
+    border: solid 1px #FF0000;
+    background-color: #FFBABA;
+    color: #D8000C;
+    border-radius: 5px;
+    font-size: 16px;
+}
 /* Responsive sidebar */
 
 @media (max-width: 800px) {

@@ -98,7 +98,7 @@
 
     <section class="reserva" id="reserva">
         <h2>Hacer una Reserva</h2>
-        <form action="https://edbackendcafeteriatemplate.vercel.app/api/reservas" method="post">
+        <form action="https://edbackendcafeteriatemplate.vercel.app/api/reservas" method="post" id="reserva-form">
             <label for="name">Nombre:</label>
             <input type="text" id="name" name="name" required>
 
@@ -118,6 +118,18 @@
             <input type="number" id="guests" name="guests" min="1" max="20" required>
 
             <button type="submit">Reservar Ahora</button>
+            <div class="loaded-response">
+                <i class="fa-solid fa-circle-notch fa-spin"></i>
+                <p>Procesando tu reserva...</p>
+            </div>
+            <div class="success">
+                <i class="fa-solid fa-check"></i>
+                <p>¡Reserva realizada con éxito!</p>
+            </div>
+            <div class="error">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <p>Hubo un error al realizar la reserva. Por favor, inténtalo mas tarde.</p>
+            </div>
         </form>
     </section>
 
@@ -164,17 +176,7 @@
 
     <!-- Script -->
 
-    <script>
-        function showSidebar() {
-            const sidebar = document.querySelector('.sidebar');
-            sidebar.style.display = "flex";
-        }
-
-        function hideSidebar() {
-            const sidebar = document.querySelector('.sidebar');
-            sidebar.style.display = "none";
-        }
-    </script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
