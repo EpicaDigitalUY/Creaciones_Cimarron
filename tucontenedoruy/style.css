@@ -368,6 +368,7 @@ footer {
     }
     form {
         width: 100%;
+        gap: 0;
     }
     input,
     select,
