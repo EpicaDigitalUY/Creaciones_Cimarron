@@ -263,7 +263,34 @@ header nav .sidebar li {
 .reserva form button:hover {
     background-color: #7a4220;
 }
+.loaded-response {
+    display: none;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
 
+}
+.success {
+    display: none;
+    margin-top: 15px;
+    padding: 10px;
+    border: solid 1px #4BB543;
+    background-color: #DFF2BF;
+    color: #31762c;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.error {
+    display: none;
+    margin-top: 15px;
+    padding: 10px;
+    border: solid 1px #FF0000;
+    background-color: #FFBABA;
+    color: #D8000C;
+    border-radius: 5px;
+    font-size: 16px;
+}
 /* Responsive sidebar */
 
 @media (max-width: 800px) {
@@ -552,7 +579,9 @@ footer a:hover {
     .reserva form input,
     .reserva form select,
     .reserva form textarea {
+        width: 100%;
         font-size: 15px;
+        margin: 0 auto;
     }
 }
 
@@ -561,6 +590,15 @@ footer a:hover {
     header h1 {
         font-size: 22px;
         text-decoration-thickness: 0.5px;
+    }
+
+
+    .contacto {
+        margin: 10px;
+    }    
+    .info-text {
+        font-size: 14px;
+        padding: 0 10px;
     }
 
     .banner {
@@ -600,6 +638,14 @@ footer a:hover {
     .reserva form {
         padding: 15px;
         gap: 10px;
+    }
+
+.reserva form input,
+    .reserva form select,
+    .reserva form textarea {
+        width: 100%;
+        font-size: 15px;
+        margin: 0 auto;
     }
 
     .reserva form button {
