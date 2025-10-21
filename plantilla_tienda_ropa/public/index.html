@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVANOVA | Épica Digital UY</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="img/thumb-icon.png">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="/"><img src="img/icon-logo.png" alt="logo evanova"></a>
+        </div>
+        <a href="/carrito"><i class="fa-solid fa-cart-shopping"></i></a>
+    </header>
+    <!-- Banner -->
+    <section class="slider-container">
+        <div class="slider-images">
+            <div class="slider-img">
+                <img src="img/banner/calzas.png" alt="1" />
+                <div class="details">
+                    <h2>Calzas</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="img/banner/camperas.png" alt="2" />
+                <div class="details">
+                    <h2>abrigo</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="img/banner/championes.png" alt="3" />
+                <div class="details">
+                    <h2>calzado</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="img/banner/medias.png" alt="4" />
+                <div class="details">
+                    <h2>medias</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="img/banner/pantalones.png" alt="5" />
+                <div class="details">
+                    <h2>pantalones</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="img/banner/remeras.png" alt="6" />
+                <div class="details">
+                    <h2>remeras</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main content-->
+
+    <!-- Catálogo -->
+    <section id="catalog" class="catalog-section">
+        <div class="container">
+            <h2>Catálogo</h2>
+
+            <div class="catalog-controls">
+                <div class="search-wrap">
+                    <input id="catalog-search" type="search"
+                        placeholder="Buscar productos, p.ej. 'calzas negras' o 'algodón'">
+                    <button id="clear-search" type="button" title="Limpiar">✕</button>
+                </div>
+
+                <div class="category-filters" aria-label="Filtrar por categoría">
+                    <button class="cat-btn active" data-cat="all">Todos</button>
+                    <button class="cat-btn" data-cat="calzas">Calzas</button>
+                    <button class="cat-btn" data-cat="abrigo">Abrigo</button>
+                    <button class="cat-btn" data-cat="calzado">Calzado</button>
+                    <button class="cat-btn" data-cat="medias">Medias</button>
+                    <button class="cat-btn" data-cat="pantalones">Pantalones</button>
+                    <button class="cat-btn" data-cat="remeras">Remeras</button>
+                </div>
+
+                <div class="catalog-meta">
+                    <span id="result-count">Mostrando 0 productos</span>
+                </div>
+            </div>
+
+            <div id="products-grid" class="products-grid">
+                <!-- Example product card structure. Add more items as needed. -->
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre nosotros -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <h2>Sobre Nosotros</h2>
+                <div class="about-content">
+                    <div class="about-media">
+                        <img src="https://wallpapers.com/images/hd/clothing-store-pictures-lgzj7293zmxj7ctv.jpg"
+                            alt="Tienda EVANOVA" />
+                    </div>
+                    <div class="elements">
+                        <p>
+                            En EVANOVA nos apasiona la moda responsable y accesible. Somos un equipo
+                            uruguayo dedicado a ofrecer ropa de calidad con diseño contemporáneo,
+                            cuidando los detalles y promoviendo prácticas sostenibles.
+                        </p>
+
+                        <ul class="about-values">
+                            <li><i class="fa-solid fa-seedling"></i> Sostenibilidad</li>
+                            <li><i class="fa-solid fa-star"></i> Calidad</li>
+                            <li><i class="fa-solid fa-handshake-angle"></i> Cercanía</li>
+                        </ul>
+
+                        <div class="about-cta">
+                            <p class="mission"><strong>Misión:</strong> Vestir con estilo sin sacrificar el planeta.</p>
+                            <a class="btn" href="#contact">Contáctanos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team">
+                <h3>Nuestro equipo</h3>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="img/team/person1.jpg" alt="Equipo - Persona 1">
+                        <h4>Ana Pérez</h4>
+                        <p>Diseño & Curaduría</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="img/team/person2.jpg" alt="Equipo - Persona 2">
+                        <h4>Lucas Gómez</h4>
+                        <p>Producción</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="img/team/person3.jpg" alt="Equipo - Persona 3">
+                        <h4>María Díaz</h4>
+                        <p>Atención al cliente</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/jQuery.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $(".slider-img").on("click", function () {
+                $(".slider-img").removeClass("active");
+                $(this).addClass("active");
+            });
+        });
+
+        (function () {
+            
+
+          
+
+            // Elements
+        })();
+    </script>
+</body>
+
+</html>
