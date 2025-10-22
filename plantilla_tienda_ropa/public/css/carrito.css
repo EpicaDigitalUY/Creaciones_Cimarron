@@ -78,6 +78,6 @@ main {
         height: auto;
     }
     .process-button {
-        display: block;
+        display: block; 
     }
 }
