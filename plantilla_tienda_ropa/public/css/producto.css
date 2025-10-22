@@ -8,6 +8,7 @@
     padding: 30px;
     background-color: #eee;
     gap: 2rem;  
+    position: relative;
 }
 .image-container {
     height: 35rem;
@@ -56,5 +57,64 @@ button {
     transition: 150ms;
     &:hover {
         background-color:  #232380;
+    }
+}
+
+.agregado-carrito {
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: #DFF2BF;
+    border: 1px solid #4BB543;
+    color: #31762c;
+    height: 5rem;
+    width: 20rem;
+    position: absolute;
+    bottom: 10px;
+    right: -100px;
+    opacity: 0;
+    display: none;
+    transition: all 1s;
+}
+
+.agregado-carrito.visible {
+    opacity: 1;
+    right: 10px;
+    display: flex;
+}
+
+.alert-icon {
+    border: 1px solid #31762c;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    justify-content: center;
+    border-radius: 50%;
+    width: 1.7rem;
+    height: 1.7rem;
+}
+.alert-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    & a {
+        color: #204d1d;
+    }
+}
+
+
+@media(width < 480px) {
+    #producto-detalle {
+        width: 100%;
+        height: 100%;
+        min-height: 100vh;
+        flex-direction: column;
+        margin-top: 4.5rem;
+        padding: 1rem;
+    }
+    .image-container {
+        height: 20rem;
+        width: auto;
     }
 }

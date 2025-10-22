@@ -155,13 +155,9 @@ function applyFilters() {
 catButtons.forEach(btn => {
     btn.addEventListener('click', function () {
         // Toggle logic: clicking 'all' clears others; clicking a category toggles it and deactivates 'all'
-        const cat = this.dataset.cat;
-        if (cat === 'all') {
-            catButtons.forEach(b => b.classList.remove('active'));
-            this.classList.add('active');
-        } else {
+        catButtons.forEach(b => b.classList.remove('active'));
+        
             // remove 'all' active
-            catButtons.find(b => b.dataset.cat === 'all').classList.remove('active');
             this.classList.toggle('active');
             // if none left active, default back to 'all'
             const anyActiveNonAll = catButtons.some(b => b.dataset.cat !== 'all' && b.classList.contains('active'));
@@ -169,7 +165,6 @@ catButtons.forEach(btn => {
                 catButtons.forEach(b => b.classList.remove('active'));
                 catButtons.find(b => b.dataset.cat === 'all').classList.add('active');
             }
-        }
         applyFilters();
     });
 });

@@ -11,17 +11,17 @@ function render() {
     document.getElementById('elementos').innerHTML = ""
     let idProductos = []
 
-    //! REVISAR AUTOVARIACION DE TOTAL
+    
     let total = 0
 
-
+    
+    productos.map((p) => total += p.precio)
     if (productos.length === 0) {
         contenedorProductos.innerHTML = 'Aqui apareceran los productos de su carrito'
     }   
 
     document.getElementById('info-carrito').style.display.flex
     productos.forEach(producto => {
-        total += producto.precio
 
         if (idProductos.includes(producto.id)) {
 
@@ -53,8 +53,10 @@ function render() {
                     </a>
                     <label for"cantidad-${producto.id}">Cantidad:</label>
                     <input type="number" class="cantidad" id="cantidad-${producto.id}" value=1 readonly></input>
-                    <button id="more-${producto.id}">+</button>
-                    <button id="minus-${producto.id}">-</button>
+                    <div class="process-button">
+                        <button id="more-${producto.id}">+</button>
+                        <button id="minus-${producto.id}">-</button>
+                    </div>
                     `;
             contenedorProductos.appendChild(artProducto);
 

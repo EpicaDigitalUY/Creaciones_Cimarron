@@ -53,6 +53,5 @@ fetch('/json/productos.json')
 
 function addCarrito(producto) {
     agregarAlCarrito(producto)
-    alert("Agregado con exito")
-    window.location.href = "/carrito"
+  document.getElementById('aggAlert').classList.add('visible')
 }

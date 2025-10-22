@@ -4,9 +4,11 @@ main {
 }
 
 .products-grid {
+    margin-top: 4rem;
+    padding:  2rem;
     height: 100%;
-    margin-top: 6rem;
-    margin-left: 6rem;
+    width: 70%;
+    justify-content: start;
 }
 .cantidad {
     width: 2.5rem;
@@ -25,13 +27,19 @@ main {
     cursor: pointer;
     border-radius: 2px;
 }
+.process-button {
+    display: inline-block;
+}
 
 .info-carrito {
+    position: fixed;
     padding: 6rem 3rem 3rem 3rem;
     width: 25%;
     height: 100vh;
     background-color: #cac8c8;
+    right: 0;
 }
+
 
 .buy {
     
@@ -48,5 +56,28 @@ main {
     cursor: pointer;
     &:hover {
         background-color:  #232380;
+    }
+}
+
+@media(width<480px) {
+    .info-carrito {
+        height: 35%;
+        width: 100%;
+        bottom: 0;
+        padding: 1rem 2rem;
+    }
+    .products-grid {
+        margin-top: 5rem;
+        overflow-y: scroll;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+    }
+    .product-card {
+        width: 45%;
+        height: auto;
+    }
+    .process-button {
+        display: block;
     }
 }
