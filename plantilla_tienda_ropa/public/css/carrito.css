@@ -68,6 +68,7 @@ main {
     }
     .products-grid {
         margin-top: 5rem;
+        margin-bottom: 75%;
         overflow-y: scroll;
         height: 100%;
         width: 100%;
@@ -75,7 +76,7 @@ main {
     }
     .product-card {
         width: 45%;
-        height: auto;
+        height: 35%;
     }
     .process-button {
         display: block; 
