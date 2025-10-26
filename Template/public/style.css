@@ -328,6 +328,11 @@ border-radius: 8px;
 
 @media(width < 480px) {
 
+    .banner {
+        height: 25vh;
+        margin-bottom: 50px;
+        /* background-position: -50px 0; */
+    }
 
     /*? No se como estiar esto ayuuuuuuuda */
     .slider-container {
@@ -390,7 +395,7 @@ border-radius: 8px;
     }
     .product-card {
         width: 45%;
-        height: 350px;
+        height: 370px;
     }
 
     .about-section {
