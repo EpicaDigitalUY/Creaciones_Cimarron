@@ -1,0 +1,84 @@
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.products-grid {
+    margin-top: 4rem;
+    padding:  2rem;
+    height: 100%;
+    width: 70%;
+    justify-content: start;
+}
+.cantidad {
+    width: 2.5rem;
+    text-align: center;
+    font-size: 1.3rem;
+    border: none;
+}
+
+.products-grid button {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    background-color: #000;
+    color: wheat;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.process-button {
+    display: inline-block;
+}
+
+.info-carrito {
+    position: fixed;
+    padding: 6rem 3rem 3rem 3rem;
+    width: 25%;
+    height: 100vh;
+    background-color: #cac8c8;
+    right: 0;
+}
+
+
+.buy {
+    
+    color: whitesmoke;
+    margin-top: 50px;
+    background-color: #2b2bc0;
+    border: 1px solid black;
+    transition: 150ms;
+    margin: 1rem auto;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    &:hover {
+        background-color:  #232380;
+    }
+}
+
+@media(width<480px) {
+    .info-carrito {
+        height: 35%;
+        width: 100%;
+        bottom: 0;
+        padding: 1rem 2rem;
+    }
+    .products-grid {
+        margin-top: 5rem;
+        margin-bottom: 75%;
+        overflow-y: scroll;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+    }
+    .product-card {
+        width: 45%;
+        height: 35%;
+    }
+    .process-button {
+        display: block; 
+    }
+}

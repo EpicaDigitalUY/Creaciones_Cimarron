@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "categoria": "materas",
+    "nombre": "Matera de Eco Cuero",
+    "descripcion": "Matera de ecocuero 100% artesanal.",
+    "tags": ["Matera", "Mate", "Termo", "Cuero"],
+    "imagen": "img/banner/matera.png",
+    "precio": 1000
+  },
+  {
+    "id": 2,
+    "categoria": "termos",
+    "nombre": "Termo Staley",
+    "descripcion": "Termo Stanley original",
+    "tags": ["Termo", "Stanley", "Termico"],
+    "imagen": "img/banner/stanley.png",
+    "precio": 4990
+  },
+  {
+    "id": 3,
+    "categoria": "hamacas",
+    "nombre": "Hamaca Paraguaya",
+    "descripcion": "Hamaca paraguaya ideal para tu jardín",
+    "tags": ["hamaca", "jardin", "paraguaya", "hamaca paraguaya"],
+    "imagen": "img/banner/amaca_paraguaya.png",
+    "precio": 1500
+  },
+  {
+    "id": 4,
+    "categoria": "chancletas",
+      "nombre": "Chancletas de niño",
+    "descripcion": "Chancletas de niño variedad de diseños Disney aprovecha no te quedes sin la tuya a tan solo $350 talles del 23 al 30",
+    "tags": ["Chancletas", "niño", "calzado", "verano", "Disney"],
+    "imagen": "img/banner/chancletas.png",
+    "precio": 350
+  }
+]
