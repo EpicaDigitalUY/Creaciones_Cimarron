@@ -1,101 +1,38 @@
 [
   {
     "id": 1,
-    "categoria": "calzas",
-    "nombre": "Calza deportiva negra",
-    "descripcion": "Calza elástica, secado rápido",
-    "tags": ["deportiva", "algodon", "elastano", "negra"],
-    "imagen": "img/banner/calzas.png",
-    "precio": 1290
+    "categoria": "materas",
+    "nombre": "Matera de Eco Cuero",
+    "descripcion": "Matera de ecocuero 100% artesanal.",
+    "tags": ["Matera", "Mate", "Termo", "Cuero"],
+    "imagen": "img/banner/matera.png",
+    "precio": 1000
   },
   {
     "id": 2,
-    "categoria": "abrigo",
-    "nombre": "Campera acolchada",
-    "descripcion": "Abrigo térmico, capucha desmontable",
-    "tags": ["abrigo", "campera", "acolchado", "invierno"],
-    "imagen": "img/banner/camperas.png",
+    "categoria": "termos",
+    "nombre": "Termo Staley",
+    "descripcion": "Termo Stanley original",
+    "tags": ["Termo", "Stanley", "Termico"],
+    "imagen": "img/banner/stanley.png",
     "precio": 4990
   },
   {
     "id": 3,
-    "categoria": "calzado",
-    "nombre": "Championes running",
-    "descripcion": "Suela ligera, amortiguación",
-    "tags": ["championes", "calzado", "running", "entrenamiento"],
-    "imagen": "img/banner/championes.png",
-    "precio": 3200
+    "categoria": "hamacas",
+    "nombre": "Hamaca Paraguaya",
+    "descripcion": "Hamaca paraguaya ideal para tu jardín",
+    "tags": ["hamaca", "jardin", "paraguaya", "hamaca paraguaya"],
+    "imagen": "img/banner/amaca_paraguaya.png",
+    "precio": 1500
   },
   {
     "id": 4,
-    "categoria": "medias",
-    "nombre": "Medias tobilleras pack 3",
-    "descripcion": "Algodón peinado, refuerzo talón",
-    "tags": ["medias", "pack", "3", "tobilleras", "algodon"],
-    "imagen": "img/banner/medias.png",
-    "precio": 590
-  },
-  {
-    "id": 5,
-    "categoria": "pantalones",
-    "nombre": "Pantalón chino beige",
-    "descripcion": "Corte recto, bolsillos clásicos",
-    "tags": ["pantalones", "chino", "beige", "casual"],
-    "imagen": "img/banner/pantalones.png",
-    "precio": 2150
-  },
-  {
-    "id": 6,
-    "categoria": "remeras",
-    "nombre": "Remera básica blanca",
-    "descripcion": "100% algodón, corte moderno",
-    "tags": ["remeras", "basica", "blanca", "algodon"],
-    "imagen": "img/banner/remeras.png",
-    "precio": 890
-  },
-  {
-    "id": 7,
-    "categoria": "calzas",
-    "nombre": "Calza estampada",
-    "descripcion": "Estampado floral, cintura alta",
-    "tags": ["calzas", "estampada", "cintura", "alta", "floral"],
-    "imagen": "img/banner/calzas.png",
-    "precio": 1590
-  },
-  {
-    "id": 8,
-    "categoria": "abrigo",
-    "nombre": "Saco de lana",
-    "descripcion": "Sutil mezcla de lana, ideal para oficina",
-    "tags": ["saco", "abrigo", "lana", "elegante"],
-    "imagen": "img/banner/camperas.png",
-    "precio": 5800
-  },
-  {
-    "id": 9,
-    "categoria": "calzado",
-    "nombre": "Botín urbano",
-    "descripcion": "Cuero sintético, suela antideslizante",
-    "tags": ["botin", "calzado", "urbano", "cuero"],
-    "imagen": "img/banner/championes.png",
-    "precio": 3950
-  },
-  {
-    "id": 10,
-    "categoria": "remeras",
-    "nombre": "Remera estampada manga corta",
-    "descripcion": "Estampa exclusiva EVANOVA",
-    "tags": ["remera", "estampada", "manga", "corta", "urbana"],
-    "imagen": "img/banner/remeras.png",
-    "precio": 1050
-  },
-  {
-    "id": 11,
-    "categoria": "pantalones",
-    "nombre": "Jogger gris",
-    "descripcion": "Tela suave, cintura elasticada",
-    "tags": ["jogger", "pantalon", "deportivo", "gris", "elastico"],
-    "imagen": "img/banner/pantalones.png",
-    "precio": 1750
+    "categoria": "chancletas",
+      "nombre": "Chancletas de niño",
+    "descripcion": "Chancletas de niño variedad de diseños Disney aprovecha no te quedes sin la tuya a tan solo $350 talles del 23 al 30",
+    "tags": ["Chancletas", "niño", "calzado", "verano", "Disney"],
+    "imagen": "img/banner/chancletas.png",
+    "precio": 350
   }
 ]
